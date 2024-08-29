@@ -28,7 +28,7 @@ public class BookResource {
         return ResponseEntity.ok().body(obj);
     }
 
-    @GetMapping
+    @RequestMapping
     public ResponseEntity<List<BookDTO>> findAll(@RequestParam(value = "categoria", defaultValue = "0") Integer id_cat){
         //Estilo da URL localhost:8080/books?categoria=1
         List<Book> list = bookService.fidAll(id_cat);

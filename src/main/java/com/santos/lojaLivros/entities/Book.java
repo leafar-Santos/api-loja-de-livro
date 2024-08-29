@@ -30,8 +30,8 @@ public class Book implements Serializable {
     @Length(min = 3, max = 50, message = "Campo Nome do Autor deve possuir entre 3 e 100 caracteres.")
     private String nomeAutor;
 
-    @NotEmpty(message = "Campo textoé obrigatório")
-    @Length(min = 10, max = 2000000, message = "Campo Nome do Autor deve possuir entre 10 e 2.000.000 caracteres.")
+    @NotEmpty(message = "Campo texto é obrigatório")
+    @Length(min = 10, max = 2000000, message = "Campo Texto deve possuir entre 10 e 2.000.000 caracteres.")
     private String texto;
 
     //O livro obrigatoriamente deve possuir uma categoria
